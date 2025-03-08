@@ -37,8 +37,8 @@
 				display: none;
 			}
 			p {
-				width: 390px;
-				font-size: 16px;
+				width: 100%;
+				font-size: 15.56px;
 				line-height: 24px;
 			}
 			button {
@@ -51,15 +51,15 @@
 			justify-content: center;
 			order: -1;
 			img {
-				width: 361.44px;
+				width: 100%;
 			}
 		}
 		.h1_mob {
 			display: block;
 			order: -2;
-			width: 390px;
+			width: 100%;
 			height: 165px;
-			font-size: 43px;
+			font-size: 40px;
 		}
 	}
 }
