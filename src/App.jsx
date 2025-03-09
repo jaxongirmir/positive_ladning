@@ -29,10 +29,11 @@ export default function App() {
 			/>
 			<AboutUs />
 			<CaseCard
-				h2={'Our Working Process '}
+				h2={'Our Working  Process '}
 				p={'Step-by-Step Guide to . Your Business Goals'}
 				width={292}
 			/>
+			{/* <AccordionMy /> */}
 		</div>
 	)
 }

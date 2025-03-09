@@ -33,3 +33,15 @@
 		}
 	}
 }
+.about_mob {
+	display: none !important;
+}
+@media (max-width: 430px) {
+	.about {
+		display: none;
+	}
+	.about_mob {
+		margin-top: 50px;
+		display: flex !important;
+	}
+}
