@@ -1,0 +1,128 @@
+.contact {
+	margin: 80px 0 0;
+	padding: 60px 100px 80px;
+	background-color: var(--gray-color);
+	border-radius: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.form {
+		.radio {
+			display: flex;
+			gap: 10px;
+
+			.round_one,
+			.round_two {
+				width: 26px;
+				height: 26px;
+				border-radius: 50%;
+				border: 1px solid var(--secondary-color);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+
+				div {
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					background-color: transparent;
+					scale: 0;
+					transition: background-color 0.5s ease;
+				}
+			}
+
+			.radio_input:checked + div {
+				scale: 1;
+				background-color: var(--primary-color);
+			}
+
+			.radio_input {
+				display: none;
+			}
+			p {
+				padding-right: 25px;
+			}
+		}
+		.input {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 25px;
+			margin: 40px 0;
+			label {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+				input {
+					width: 556px;
+					height: 59px;
+					border-radius: 14px;
+					border: 1px solid var(--secondary-color);
+					padding: 0 0 0 30px;
+					font-size: 18px;
+				}
+			}
+			label:nth-child(3) {
+				textarea {
+					width: 556px;
+					height: 190px;
+					border-radius: 14px;
+					border: 1px solid var(--secondary-color);
+					padding: 18px 0 0 30px;
+					font-size: 18px;
+				}
+			}
+		}
+		button {
+			width: 556px;
+			background-color: var(--secondary-color);
+			color: var(--white);
+		}
+	}
+	.img img {
+		translate: 215px;
+	}
+}
+.btn_mob {
+	background-color: var(--secondary-color) !important;
+	color: var(--white);
+	display: none !important;
+	width: 100%;
+	margin-top: 30px;
+}
+@media (max-width: 430px) {
+	.contact {
+		padding: 40px !important;
+		.radio {
+			justify-content: space-between;
+			p {
+				font-size: 14px;
+				padding: 0 !important;
+			}
+		}
+		.input {
+			padding: 0;
+			label {
+				font-size: 14px;
+				input {
+					font-size: 16px;
+					width: 110% !important;
+				}
+				textarea {
+					width: 115% !important;
+				}
+			}
+		}
+		button {
+			width: 100% !important;
+			display: none;
+		}
+		.img {
+			display: none;
+		}
+	}
+	.btn {
+		display: block;
+	}
+}
